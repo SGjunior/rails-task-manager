@@ -1,0 +1,16 @@
+<h2><%= @task.title %></h2>
+<hr>
+<p style="color: #afa7a7;"><i><%= @task.details %></i></p>
+
+<% if @task.completed  %>
+  <p class="alert-success">This task is completed</p>
+<% else %>
+  <p class="alert-danger">This task is not completed</p>
+<% end %>
+
+<hr>
+<%= link_to 'edit', edit_task_path(@task) %>
+<hr>
+<%= link_to 'Go back', tasks_path %>
+<hr>
+<%= link_to 'Delete', task_path(@task), method: :delete %>

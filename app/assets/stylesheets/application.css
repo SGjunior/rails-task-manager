@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+
+.main-container {
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.index-task-container {
+
+
+}
+
+.index-task-container a {
+  text-decoration: none;
+  text-align: left;
+  margin: 5px 100px;
+}
+
+.task-details {
+  font-size: 10px;
+  color: #afa7a7;
+}

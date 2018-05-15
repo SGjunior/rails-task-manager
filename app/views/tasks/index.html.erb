@@ -1,0 +1,18 @@
+<h1>My tasks</h1>
+<hr>
+<%= link_to new_task_path do %>
+<div class="btn btn-info">Add Task</div>
+<% end  %>
+
+<hr>
+<div class="index-task-container">
+<ul class="list-group">
+<% @tasks.each do |task| %>
+
+  <%= link_to task_path(task.id) do %>
+    <li class="list-group-item" style="overflow: hidden;"><%= task.title %> <i class="task-details"> - <%= task.details %></i></li>
+  <% end %>
+
+<% end %>
+</ul>
+</div>
